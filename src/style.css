@@ -65,3 +65,8 @@ footer {
   text-align: left;
   margin: 10px 110px;
 }
+.footer {
+  display: block;
+  text-align: left;
+  margin-bottom: 40px;
+}
