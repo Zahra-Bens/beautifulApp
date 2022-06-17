@@ -42,6 +42,7 @@ function displayWeather(response) {
   temperature.innerHTML = Math.round(response.data.main.temp);
 }
 function search(event) {
+  event.preventDefault();
   let city = document.querySelector("#city-input").value;
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -53,6 +54,7 @@ searchForm.addEventListener("submit", search);
 
 //Feature3
 function convertToF(event) {
+  event.preventDefault();
   let temperature = document.querySelector(`#temperature`);
   temperature.innerHTML = 66;
 }
